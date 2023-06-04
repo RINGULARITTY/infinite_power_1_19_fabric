@@ -1,12 +1,12 @@
 {
   "schemaVersion": 1,
-  "id": "modid",
+  "id": "infinite_power",
   "version": "${version}",
 
-  "name": "Example Mod",
+  "name": "Infinite Power",
   "description": "This is an example description! Tell everyone what your mod is about!",
   "authors": [
-    "Me!"
+    "Ringularity"
   ],
   "contact": {
     "homepage": "https://fabricmc.net/",
@@ -19,11 +19,14 @@
   "environment": "*",
   "entrypoints": {
     "main": [
-      "net.fabricmc.example.ExampleMod"
+      "fr.ringularity.infinite_power.InfinitePower"
+    ],
+    "client": [
+      "fr.ringularity.infinite_power.Client"
     ]
   },
   "mixins": [
-    "modid.mixins.json"
+    "infinite_power.mixins.json"
   ],
 
   "depends": {
